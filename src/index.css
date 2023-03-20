@@ -28,7 +28,8 @@ button {
 .calculator {
   padding: 1em;
   height: 445px;
-  min-width: 400px;
+  width: 400px;
+  max-width: 100dvw;
   border-radius: 4px;
   background-color: rgb(202, 166, 166);
   display: grid;
