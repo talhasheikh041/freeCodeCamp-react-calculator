@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+}
+
+#root {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3em 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+.calculator {
+  padding: 1em;
+  height: 445px;
+  min-width: 400px;
+  border-radius: 4px;
+  background-color: rgb(202, 166, 166);
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "expression expression expression expression"
+    "display     display    display    display"
+    "clear        clear     divide     multiply"
+    "seven        eight      nine      subtract"
+    "four         five       six        add"
+    "one          two        three      equals"
+    "zero         zero       decimal    equals";
+}
+
+#expression {
+  grid-area: expression;
+  text-align: right;
+  font-size: 1.5rem;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  padding-right: 0.2em;
+}
+
+#display {
+  grid-area: display;
+  text-align: right;
+  font-size: 2rem;
+  margin-top: -20px;
+  padding-top: 20px;
+  border: 1px solid black;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+  padding-right: 0.2em;
+}
+
+#clear {
+  grid-area: clear;
+  background-color: rgb(17, 133, 201);
+  color: white;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#add {
+  grid-area: add;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#equals {
+  grid-area: equals;
+  background-color: green;
+  color: white;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#decimal {
+  grid-area: decimal;
+}
